@@ -3,11 +3,77 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Texas puts perfect mark on line at Kansas State</title>
-<link rel="stylesheet" type="text/css" href="style.css" />
+
+
+<style type="text/css" />
+  body{color:#202020;font-family:Georgia,"Times New Roman"; font-size:14px;background: -moz-linear-gradient(top, #cccccc 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #cccccc 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #cccccc 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #cccccc 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #cccccc 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff',GradientType=0 );}
+	
+	a{text-decoration:none; color:#202020;}
+	
+	#top-text a{color:#cc6600;}
+	
+	#left-side{width:169px; float:left;}
+	
+	#right-side{width:400px; float:left; margin-left:20px;}
+	
+	#header{font-size:18px; margin-bottom:15px; margin-top:10px;}
+	
+	#author{font-family:"MS Trebuchet",sans-serif;}
+	
+	#author a{color:#cc6600;}
+	
+	#published{ margin: 10px 0px; font-family:"MS Trebuchet",sans-serif; font-size:12px;}
+	 
+	#post-interact{font-size:12px; border-top:dotted 1px;padding-top:5px; font-family:"MS Trebuchet",sans-serif;}
+	
+	#post-interact a{color:#cc6600;}
+	
+	#post-interact a:hover{color:#202020;}
+	
+	/*Sprites*/
+	.post {background-image:url('../images/sprites.gif'); background-position: 0 -479px;background-repeat: no-repeat; padding-left:18px;}
+	
+	.email {background-image:url('../images/sprites.gif'); background-position: 0 -253px;background-repeat: no-repeat; padding-left:18px;}
+	
+	.print {background-image:url('../images/sprites.gif'); background-position: 0 -299px;background-repeat: no-repeat; padding-left:18px;}
+	
+	.share {background-image:url('../images/sprites.gif'); background-position: 0 -345px;background-repeat: no-repeat; padding-left:18px;}
+	
+	.large{background-image:url('../images/sprites.gif'); background-position: 0 -389px;background-repeat: no-repeat; padding-left:18px;}
+	
+	.small {background-image:url('../images/sprites.gif'); background-position: 0 -434px;background-repeat: no-repeat; padding-left:18px;}
+</style>
+
+
 
 <script type="text/javascript" src="../js/jquery-1.4.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-<script type="text/javascript" src="../js/text-size.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+    $("a.small").live('click', function(event)  {
+    $(".small").removeClass("small").addClass("large");
+    $(".large").text("Larger Type");
+    $("#content").css("font-size","14px");
+    });
+    });
+    
+    $(document).ready(function(){
+    $("a.large").live('click', function(event) {
+    $(".large").removeClass("large").addClass("small");
+    $(".small").text("Small Type");
+    $("#content").css("font-size","16px");
+    
+    });
+    });
+</script>
+
 </head>
 
 <body>
@@ -39,4 +105,7 @@ Published: 6:57 p.m. Sunday, Jan. 17, 2010</div>
 </div>
 </body>
 </html>
+
+
+
 
